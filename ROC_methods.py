@@ -2,7 +2,7 @@
 cd C:/Users/Administrator/Desktop/CRLM
 
 
-python ROC_methods.py --intotal_path SRC-table/intotal-cbind.csv --config_path SRC-ROC/roc.json --output_path SRC-ROC/roc_train.pdf --dataset Training
+python ROC_methods.py --intotal_path SRC-table/intotal-cbind.csv --config_path SRC-ROC/ROC_cohorts.json --output_path SRC-ROC/roc_train.pdf --dataset Training
 
 
 

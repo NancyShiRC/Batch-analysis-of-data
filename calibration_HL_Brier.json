@@ -1,0 +1,11 @@
+{
+  "models": [
+        "HE_UNI",
+        "HE_CONCH",
+        "ki67_UNI",
+        "ki67_CONCH"
+  ],
+  "positive_label": 1,
+  " Hosmer-Lemeshow_groups": 10,
+  "datasets": ["Training", "Internal Validation", "External Validation"] 
+}

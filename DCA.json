@@ -1,0 +1,31 @@
+{
+  "input_csv_path": "SRC-table/intotal-cbind.csv",
+  "output_dir": "SRC-DCA",
+  "true_label_col": "true_label",
+  "dataset_col": "set",
+  "threshold_range": [0, 1],
+  "threshold_step": 0.01,
+
+  "datasets": [
+    {
+      "name": "Training",
+      "color_scheme": "#ed0000"
+    },
+    {
+      "name": "Internal Validation",
+      "color_scheme": "#00468b"
+    },
+    {
+      "name": "External Validation",
+      "color_scheme": "#42b540"
+    }
+  ],
+
+  "models": [
+    {
+      "name": "HE+ki67_UNI",
+      "prediction_col": "HE+ki67_UNI",
+      "algorithm": "combined"
+    }
+  ]
+}

@@ -15,7 +15,7 @@ from pytorch_lightning import Trainer
 def make_parse():
     parser = argparse.ArgumentParser()
     parser.add_argument('--stage', default='train', type=str)
-    parser.add_argument('--config', default='Camelyon/TransMIL.yaml',type=str)
+    parser.add_argument('--config', default='train.yaml',type=str)
     parser.add_argument('--gpus', default = [0, 1])
     parser.add_argument('--fold', default = 0)
     args = parser.parse_args()

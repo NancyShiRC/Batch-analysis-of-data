@@ -1,0 +1,16 @@
+{
+    "selected_columns": [
+        "HE_UNI",
+        "HE_CONCH",
+        "ki67_UNI",
+        "ki67_CONCH"
+    ],
+    "colors": [
+        "#E90F44",
+        "#5B3660",  
+        "#63ADEE", 
+        "#60966D"
+    ],
+    "positive_label": 1,
+    "show_ci": false
+}

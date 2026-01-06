@@ -16,8 +16,8 @@ General:
 Data:
     dataset_name: camel_data
     data_shuffle: True
-    data_dir: /home/omnisky/sdg/Lrz/Yidayi/features/pt_files/
-    label_dir: /home/omnisky/sdg/Lrz/Yidayi/features/split_zxw_1.csv
+    data_dir: /features/pt_files/
+    label_dir: /features/split.csv
     fold: 0
     nfold: 99
 

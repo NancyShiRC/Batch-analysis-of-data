@@ -3,10 +3,5 @@ library(pROC)
 roc1 <- roc(response, predictor1)
 roc2 <- roc(response, predictor2)
 result <- roc.test(roc1, roc2, method = "delong")
-print(result)# 只需几行代码
-library(pROC)
-
-roc1 <- roc(response, predictor1)
-roc2 <- roc(response, predictor2)
-result <- roc.test(roc1, roc2, method = "delong")
 print(result)
+

@@ -1,0 +1,36 @@
+# DCA阈值分析配置文件
+
+# 数据文件配置
+data:
+  excel_path: "./finaldata/uniHEIHC.xlsx"
+  sheet_name: "uniHEIHC"
+
+# 列名配置
+columns:
+  group: "group"                    # 数据集分组列 (train/internal/external)
+  true_label: "true_label"          # 真实标签列名 (1=阳性, 0=阴性)
+  pred_prob: "label_1"              # 预测概率列名
+
+# DCA分析参数
+dca:
+  # 治疗阈值概率范围 (p_t)
+  pt_range:
+    start: 0.01
+    end: 0.50
+    step: 0.01
+  
+  # 模型预测阈值搜索范围
+  threshold_range:
+    start: 0.01
+    end: 0.99
+    step: 0.01
+
+# Bootstrap参数
+bootstrap:
+  n_iterations: 1000
+  random_seed: 42
+
+# 输出配置
+output:
+  dir: "./DCA-guided_threshold"
+  save_detailed: true

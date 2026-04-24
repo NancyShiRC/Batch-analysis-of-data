@@ -1,0 +1,24 @@
+# Bootstrap分析配置文件
+
+
+
+# 列名配置（根据您的Excel数据）
+columns:
+  group: "group"                 # 数据集分组列（train/internal/external）
+  true_label: "true_label"      # 真实标签列名
+  pred_prob: "label_1"          # 预测概率列名（label_1是模型输出的概率）
+  sample_id: "SampleID"         # 样本ID列名
+
+# 模型参数
+model:
+  threshold: 0.5                # 分类阈值
+
+# Bootstrap参数
+bootstrap:
+  n_iterations: 1000
+  random_seed: 42
+
+# 输出配置
+output:
+  dir: "./bootstrap"
+  save_detailed: true

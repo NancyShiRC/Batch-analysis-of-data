@@ -1,7 +1,7 @@
 library(readxl)
 library(PRROC)
 
-try(Sys.setlocale("LC_ALL", "zh_CN.UTF-8"), silent = TRUE)
+# try(Sys.setlocale("LC_ALL", "zh_CN.UTF-8"), silent = TRUE)
 
 base_dir <- "/work_dir"
 input_file <- file.path(base_dir, "model_output.xlsx")
